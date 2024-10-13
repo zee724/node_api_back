@@ -8,6 +8,7 @@ app.get("/", function (req, res) {
 });
 
 require("./startup/routes")(app);
+require("./startup/db")();
 
 const port = 3000;
 
